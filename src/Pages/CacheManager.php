@@ -14,7 +14,6 @@ use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
 use Illuminate\Contracts\Support\Htmlable;
-use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Str;
 use UnitEnum;
@@ -46,7 +45,7 @@ class CacheManager extends Page implements HasInfolists
         return FilamentCacheManagerPlugin::get()->navigationIcon;
     }
 
-    public function getHeading(): string|Htmlable
+    public function getHeading(): string | Htmlable
     {
         return FilamentCacheManagerPlugin::get()->navigationLabel;
     }

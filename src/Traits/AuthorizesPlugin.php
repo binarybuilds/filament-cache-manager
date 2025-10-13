@@ -7,9 +7,11 @@ use Filament\Panel;
 trait AuthorizesPlugin
 {
     private $canAccess = true;
+
     public function canAccessPlugin(callable | bool $access): static
     {
         $this->canAccess = $access;
+
         return $this;
     }
 
