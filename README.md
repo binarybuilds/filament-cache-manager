@@ -53,7 +53,7 @@ FilamentCacheManagerPlugin::make()
 ```
 Change navigation icon:
 ```php
-use Filament\Support\Icons\Heroiconl
+use Filament\Support\Icons\Heroiconl;
 
 FilamentCacheManagerPlugin::make()
     ->navigationIcon(Heroicon::CpuChip);
